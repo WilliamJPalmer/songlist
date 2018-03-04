@@ -1,0 +1,30 @@
+<div class="logregcontainer">
+
+
+<fieldset class="fieldset-style">
+  <legend class="legend-title">Register</legend>
+  <form  action="/users/" method="post">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"><br>
+    <input class="inputField" style="margin-bottom:10px;"  type="text" name="first_name" placeholder="First Name"><br>
+    <input class="inputField" style="margin-bottom:10px;"  type="text" name="last_name" placeholder="Last Name"><br>
+    <input class="inputField" style="margin-bottom:10px;"  type="text" name="email" placeholder="Email Address"><br>
+    <input class="inputField" style="margin-bottom:10px;"  type="password" name="password" placeholder="Password"><br>
+    <input class="inputField" style="margin-bottom:10px;"  type="password" name="password_confirmation" placeholder="Password Confirmation"><br>
+    <input class="ghost-button" type="submit" name="register" value="Register">
+  </form>
+</fieldset>
+
+<hr style="margin-top:20px;margin-bottom: 15px;">
+
+<fieldset class="fieldset-style2">
+  <legend class="legend-title2">Login</legend>
+    <form action="/users/login" method="post">
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+      <input class="inputField" style="margin-bottom:10px;"  type="text" name="email" value="" placeholder="Email"><br>
+      <input class="inputField" style="margin-bottom:10px;"  type="password" name="password" value="" placeholder="Password"><br>
+      <input class="ghost-button" type="submit" name="login" value="Log In">
+
+    </form>
+</fieldset>
+
+</div>

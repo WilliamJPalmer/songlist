@@ -1,0 +1,56 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.legend-title{
+  text-align:center;
+  font-size:24px;
+  font-weight:bold;color:#777777;
+  background-color:#ABD3E5;
+  width:150px;
+  height:40px;
+  // border:1px solid #fff;
+  border-radius: 10px;
+  padding:5px;
+}
+.legend-title2{
+  text-align:center;
+  font-size:24px;
+  font-weight:bold;color:#777777;
+  background-color:#fff;
+  width:150px;
+  height:40px;
+  // border:1px solid #fff;
+  border-radius: 10px;
+  padding:5px;
+}
+.fieldset-style{
+  // padding:20px;
+  text-align:center;
+  background-color:#ABD3E5;
+  border:1px solid #ABD3E5;
+  box-shadow: 5px 5px 10px #666;
+  border-radius: 10px;
+}
+.fieldset-style2{
+  // padding:20px;
+  text-align:center;
+  background-color:#fff;
+  border:1px solid #fff;
+  box-shadow: 5px 5px 10px #666;
+  border-radius: 10px;
+}
+.logregcontainer{
+  border:1px solid #bbbbbb;
+  background-color:#dddddd;
+  padding:25px;
+  background-image: linear-gradient(#eeeeee, #cccccc, #eeeeee);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #666666;
+}
+.playlistholder{
+  border:1px solid #bbbbbb;
+  background-color:rgba(171, 211, 230,.6);
+  padding:25px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #333;
+}

@@ -1,0 +1,58 @@
+<div class="holder">
+
+<p class="helloName" >Hello,</p>
+  <p class="helloName2"> <%=current_user.first_name%> <%=current_user.last_name%></p>
+<hr style="margin-top:20px;">
+
+<p style="font-size:14px; font-weight:bold;text-align:center;color:#333333;">All the songs in our collection:</p>
+
+
+<div style="max-height:300px;overflow-y:scroll;box-shadow: 3px 3px 10px #666666;">
+<table style="border:1px solid #999999;background-color:white;width:100%;border-spacing:0px;overflow-y:auto;">
+  <thead style="background-color:#5A8DB2;font-size:14px;;color:#eeeeee">
+    <tr>
+      <td style="padding:8px;">Artist</td>
+      <td style="padding:4px;">Title</td>
+      <td style="padding:4px;"># Times Added</td>
+      <td style="padding:4px;">Add to Playlist</td>
+    </tr>
+  </thead>
+
+  <tbody>
+
+        <%@songs.each do |song|%>
+        <tr style="font-size:12px;">
+          <td style="padding:4px;"> <%= song.artist %></td>
+          <td style="padding:4px;"> <a href="/songs/<%=song.id%>"><%=song.title%></a> </td>
+          <td style="padding:4px;text-align:center;"> <%= song.count %></td>
+          <td style="text-align:center;">
+            <form action="/userplaylists/<%=song.id%>" method="post">
+              <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+
+              <input type="hidden" name="song_id" value="<%=song.id%>">
+              <input type="submit" name="" value="Add">
+            </form>
+        </td>
+
+        </tr>
+      <% end %>
+  </tbody>
+
+</table>
+</div>
+<hr style="margin-top:25px;">
+<div style="text-align:center;">
+
+
+<h3 class="addSong">Add a Song</h3>
+<form action="/songs" method="post">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+  <input class="inputField2" type="text" name="title" placeholder="Song Title"><br>
+  <input class="inputField2" type="text" name="artist" placeholder="Artist Name"><br>
+
+  <input class="ghost-button" type="submit" name="add" value="Add Song">
+</form>
+
+</div>
+
+</div>

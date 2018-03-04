@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playlist</title>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="main_bkg"style="background-color:#eeeeee;">
+  <p class="title">Playlist</p>
+  <div class="wrapper">
+    <style>
+      tr:nth-child(even){background-color:#f2f2f2}
+    </style>
+  <% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <p style="font-size:12px; color:red;font-weight:bold;"> <%= error %> </p>
+  <% end %>
+  <% end %>
+  <div class=""style="margin-left:410px;">
+
+  <% if current_user %>
+  <form action="/users/<%=current_user.id%>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <input type="hidden" name="_method" value="delete">
+    <input class="ghost-LObutton" type="submit" value="Logout" name="Logout">
+
+  </form>
+  <% end %>
+  </div>
+
+<%= yield %>
+
+</body>
+</html>

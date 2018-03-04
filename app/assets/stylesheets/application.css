@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .main_bkg{
+   background-image: url(login_bkgrnd.jpg);
+ }
+ .wrapper{
+   margin:0px auto;
+   padding:20px;
+   font-family:sans-serif;
+   width:500px;
+   /*border:1px solid #666666;*/
+   background-color:rgba(225,225,225,.5);
+   box-shadow: 5px 5px 10px #333;
+   border-radius: 10px;
+
+ }
+ .title{
+   font-family: 'Rock Salt', cursive;
+   font-size: 84px;
+   text-shadow: 5px 5px 10px darkblue;
+   color:white;
+   text-align: center;
+   padding:5px;
+   margin:-20px;
+ }
+ .helloName{
+   font-family: 'Rock Salt', cursive;
+   font-size: 28px;
+   text-shadow: 3px 3px 6px red;
+   color:gray;
+   text-align: center;
+   padding:5px;
+   margin:-20px;
+ }
+ .helloName2{
+   font-family: 'Rock Salt', cursive;
+   font-size: 28px;
+   text-shadow: 3px 3px 6px #222;
+   color:blue  ;
+   text-align: center;
+   padding:5px;
+   margin:-20px;
+ }
+ .helloName3{
+   font-family: 'Rock Salt', cursive;
+   font-size: 20px;
+   font-weight: bold;
+   text-shadow: 3px 3px 6px green;
+   color:black  ;
+   text-align: center;
+   padding:5px;
+   margin:-5px;
+ }
+ .addSong{
+   font-family: 'Rock Salt', cursive;
+   font-size: 28px;
+   text-shadow: 3px 3px 6px #333;
+   color:darkred;
+   text-align: center;
+   /*padding:5px;*/
+   margin:-10px;
+ }
+ .inputField{
+   border-radius: 5px;
+   width: 150px;
+   height: 20px;
+   border: 1px solid #ddd;
+   padding:3px;
+ }
+ .inputField2{
+   border-radius: 5px;
+   width: 250px;
+   height: 20px;
+   border: 1px solid #ddd;
+   padding:3px;
+   margin: 5px;
+ }
+ .ghost-button{
+   display:inline-block;
+   width:125px;
+   height: 30px;
+   padding-bottom: 3px;
+   color: #fff;
+   border: 1px solid #aaa;
+   text-align: center;
+   outline: none;
+   text-decoration: none;
+   margin:10px;
+   background-color: rgba(102,102,102,.6);
+   border-radius: 5px;
+   /*border-radius: 5px;*/
+ }
+ .ghost-LObutton{
+   display:inline-block;
+   width:75px;
+   height: 30px;
+   padding-bottom: 3px;
+   color: #fff;
+   border: 1px solid #aaa;
+   text-align: center;
+   outline: none;
+   text-decoration: none;
+   margin:10px;
+   background-color: rgba(102,102,102,.6);
+   border-radius: 5px;
+   /*border-radius: 5px;*/
+ }

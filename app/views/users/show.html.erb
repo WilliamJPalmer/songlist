@@ -1,0 +1,33 @@
+<div class="playlistholder">
+
+<a style="text-align:right;font-size:11px;" href="/songs/">Dashboard</a>
+  <p class="helloName3"><%=@user.first_name%> <%=@user.last_name%>'s Playlist</p>
+
+<div style="max-height:200px;overflow-y:auto;box-shadow: 3px 3px 10px #666666;">
+<table style="border:1px solid #999999;background-color:white;width:450px;border-spacing:0px;">
+<thead style="background-color:#5A8DB2;font-size:14px;;color:#eeeeee">
+  <tr>
+    <td style="padding:8px;">Artist</td>
+    <td style="padding:4px;">Title</td>
+    <td style="padding:4px;">Times Added</td>
+  </tr>
+</thead>
+<tbody>
+  <% @userslist.each do |item| %>
+
+      <tr style="font-size:12px;">
+        <td style="padding:4px;"> <%= item.artist %></td>
+        <td style="padding:4px;"> <%= item.title %></td>
+        <td style="padding:4px;padding-left:20px;"> <%= item.count %></td>
+      </tr>
+      <% end %>
+
+
+
+
+</tbody>
+</table>
+</div>
+
+
+</div>
