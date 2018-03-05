@@ -16,9 +16,9 @@
  body {
    background-image: url(/login_bkgrnd.jpg);
  }
- .main_bkg{
+ /* .main_bkg{
    background-image: url(/login_bkgrnd.jpg);
- }
+ } */
  .wrapper{
    margin:0px auto;
    padding:20px;
