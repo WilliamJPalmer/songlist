@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ body {
+   background-image: url(/login_bkgrnd.jpg);
+ }
  .main_bkg{
    background-image: url(/login_bkgrnd.jpg);
  }
