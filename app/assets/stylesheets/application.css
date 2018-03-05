@@ -14,7 +14,7 @@
  *= require_self
  */
  .main_bkg{
-   background-image: url(login_bkgrnd.jpg);
+   background-image: url(/login_bkgrnd.jpg);
  }
  .wrapper{
    margin:0px auto;
