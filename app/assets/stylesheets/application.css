@@ -123,4 +123,7 @@
    background-color: rgba(102,102,102,.6);
    border-radius: 5px;
    /*border-radius: 5px;*/
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
  }
